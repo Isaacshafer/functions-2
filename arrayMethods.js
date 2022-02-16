@@ -114,11 +114,12 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 */
 
 // CODE HERE
-let orderTotals = orders.forEach((orders.price, orders.tax) => {
-  let orderPlusTax = orders.price * 1 + orders.tax
-  return orderPlusTax
-})
-console.log(orderTotals)
+// let orderTotals = orders.forEach((orders.price, orders.tax) => {
+//   let orderPlusTax = orders.price * 1 + orders.tax
+//   return orderPlusTax
+// })
+// console.log(orderTotals)
+let orderTotals = orders.map(orders )
 
 
 ////////// PROBLEM 6 //////////

@@ -6,18 +6,22 @@
 */
 
 // CODE HERE
-const multiply = function(num1, num2, muliplier){
-  
+// function multiplier(num1, num2){
+//   return num1 * num2
+// }
+const multiply = function(num1, num2, callback){
+  return callback(num1 * num2)
 }
-
+// const multiplier = (num1, num2) => num1 * num2
+// console.log(multiplier(2, 4))
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// multiply(4, 3, answer => {
-//   console.log('The answer is ' + answer) //should console.log 12
-// })
+multiply(4, 3, answer => {
+  console.log('The answer is ' + answer) //should console.log 12
+})
 
 
 
@@ -39,15 +43,19 @@ var names = ['Tyler', 'Cahlan', 'Ryan', 'Colt', 'Tyler', 'Blaine', 'Cahlan']
 */
 
 // CODE HERE 
+let first = function(arr, callback){
+  return callback(arr[0])
+}
+
 
 
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-// first(names, firstName => {
-//   console.log('The first name in names is ' + firstName)
-// })
+first(names, firstName => {
+  console.log('The first name in names is ' + firstName)
+})
 
 
 
