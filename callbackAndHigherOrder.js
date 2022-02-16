@@ -6,6 +6,9 @@
 */
 
 // CODE HERE
+const multiply = function(num1, num2, muliplier){
+  
+}
 
 
 // UNCOMMENT THE FUNCTION CALL BELOW
