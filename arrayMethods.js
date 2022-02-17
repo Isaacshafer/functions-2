@@ -119,8 +119,8 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
 //   return orderPlusTax
 // })
 // console.log(orderTotals)
-let orderTotals = orders.map(orders )
-
+let orderTotals = orders.map(orders => orders.price * (1 + orders.tax))
+console.log(orderTotals)
 
 ////////// PROBLEM 6 //////////
 
@@ -139,3 +139,7 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
 */
 
 // CODE HERE
+let filteredPurch = purchases.filter(purchases => purchases.owner === "Bob")
+console.log(filteredPurch)
+let bobsTotal = filteredPurch.reduce((a, c) => a + c)
+console.log(bobsTotal)
