@@ -186,12 +186,11 @@ each(names, (item, index) => console.log(`The item at index ${index} is ${item}`
 
 ////////// PROBLEM 7 //////////
 let getUserById = (arr, id, callback) => {
-  for(let i = 0; i < arr.length; i++){
-    for(let j = 0)
-    if(arr[i] === id){
-      callback(arr[i])
+  arr.forEach((user) => {
+    if(user.id === id){
+      callback(user)
     }
-  }
+  })
 }
 
 
@@ -227,12 +226,13 @@ var users = [
 // CODE HERE 
 
 
+
 // UNCOMMENT THE FUNCTION CALL BELOW
 // RUN THIS FILE WITH NODE
 // CHECK YOUR ANSWER
 
-getUserById(users, '16t', user => {
-  console.log('The user with the id 16t has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
+getUserById(users, '15a', user => {
+  console.log('The user with the id 15a has the email of ' + user.email + ' the name of ' + user.name + ' and the address of ' + user.address) 
 })
 
 ////////// CHALLENGE //////////
@@ -252,7 +252,9 @@ getUserById(users, '16t', user => {
 */
 
 // CODE HERE
-
+let addingFactory = (num1) => (num2) => num1 + num2
+let add10 = addingFactory(10)
+console.log(add10(3))
 /*
   Now that you have addingFactory, you can create other
   functions from it. 
@@ -291,3 +293,5 @@ getUserById(users, '16t', user => {
 */
 
 // CODE HERE
+let addNUMBER = addingFactory(42069)
+console.log(addNUMBER(1))
